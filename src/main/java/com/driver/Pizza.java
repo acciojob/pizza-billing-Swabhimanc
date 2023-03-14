@@ -30,17 +30,17 @@ public class Pizza {
 
     public void addExtraCheese()
     {
-        this.extraCheese+=80;
+        this.extraCheese=80;
     }
 
     public void addExtraToppings(){
         if(this.isVeg==true)
         {
-            this.vegToppings+=70;
+            this.vegToppings=70;
         }
         else
         {
-            this.nonVegToppings+=120;
+            this.nonVegToppings=120;
         }
     }
 
