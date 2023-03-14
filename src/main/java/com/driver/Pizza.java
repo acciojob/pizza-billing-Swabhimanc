@@ -55,20 +55,20 @@ public class Pizza {
 
         if(this.extraCheese!=0)
         {
-            ans+="Extra Cheese Added: "+this.extraCheese+"\n";
+            ans=ans+"Extra Cheese Added: "+this.extraCheese+"\n";
         }
         if(this.vegToppings!=0)
         {
-            ans+="Extra Toppings Added: "+this.vegToppings+"\n";
+            ans=ans+"Extra Toppings Added: "+this.vegToppings+"\n";
         }
         else if(this.nonVegToppings!=0)
         {
-            ans+="Extra Toppings Added: "+this.nonVegToppings+"\n";
+            ans=ans+"Extra Toppings Added: "+this.nonVegToppings+"\n";
         }
 
         if(this.paperbag!=0)
         {
-            ans+="Paperbag Added: "+this.paperbag+"\n";
+            ans=ans+"Paperbag Added: "+this.paperbag+"\n";
         }
         int total=this.price+this.paperbag+this.extraCheese+this.vegToppings+this.nonVegToppings;
         ans+="Total Price: "+total+"\n";
