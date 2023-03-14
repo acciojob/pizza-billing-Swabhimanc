@@ -6,10 +6,10 @@ public class Pizza {
     private Boolean isVeg;
     private String bill;
 
-    private int vegToppings=0;
-    private int nonVegToppings=0;
-    private int paperbag=0;
-    private int extraCheese=0;
+    private static int vegToppings=0;
+    private static int nonVegToppings=0;
+    private static int paperbag=0;
+    private static int extraCheese=0;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -23,6 +23,7 @@ public class Pizza {
             this.price=400;
         }
     }
+    public Pizza(){}
 
     public int getPrice(){
         return this.price;
