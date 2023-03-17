@@ -15,11 +15,11 @@ public class Pizza {
 
         if(isVeg) {
             price=300;
-            total+=price;
         }
         else {
             price=400;
         }
+        total+=price;
     }
 
     public int getPrice(){
