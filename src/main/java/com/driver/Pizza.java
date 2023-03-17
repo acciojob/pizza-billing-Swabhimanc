@@ -8,6 +8,7 @@ public class Pizza {
     private int nonVegToppings=0;
     private int paperbag=0;
     private int extraCheese=0;
+    int total=0;
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -21,7 +22,7 @@ public class Pizza {
     }
 
     public int getPrice(){
-        return price;
+        return total;
     }
 
     public void addExtraCheese()
@@ -60,7 +61,7 @@ public class Pizza {
             ans=ans+"Paperbag Added: "+paperbag+"\n";
         }
 
-        int total=price+paperbag+extraCheese+vegToppings+nonVegToppings;
+        total=price+paperbag+extraCheese+vegToppings+nonVegToppings;
         ans+="Total Price: "+total+"\n";
         this.bill=ans;
         return ans;
