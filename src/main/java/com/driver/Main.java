@@ -11,9 +11,11 @@ public class Main {
 
     // Create a regular veg pizza with extra cheese, extra toppings, and takeaway
     Pizza p = new Pizza(true);
+
     p.addExtraCheese();
     p.addExtraToppings();
     p.addTakeaway();
     System.out.println(p.getBill());
+
   }
 }

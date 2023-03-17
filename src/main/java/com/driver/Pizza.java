@@ -15,6 +15,7 @@ public class Pizza {
 
         if(isVeg) {
             price=300;
+            total+=price;
         }
         else {
             price=400;
@@ -28,19 +29,23 @@ public class Pizza {
     public void addExtraCheese()
     {
         this.extraCheese=80;
+        total+=extraCheese;
     }
 
     public void addExtraToppings(){
         if(isVeg) {
             this.vegToppings=70;
+            total+=vegToppings;
         }
         else {
             this.nonVegToppings=120;
+            total+=nonVegToppings;
         }
     }
 
     public void addTakeaway(){
         paperbag=20;
+        total+=paperbag;
     }
 
     public String getBill() {
