@@ -3,6 +3,7 @@ package com.driver;
 public class Pizza {
 
     private int price;
+    private int base;
     private boolean isVeg;
     private String bill;
 
@@ -20,8 +21,10 @@ public class Pizza {
 
         if (isVeg) {
             price = 300;
+            base=300;
         } else {
             price = 400;
+            base=400;
         }
     }
 
@@ -56,7 +59,7 @@ public class Pizza {
 
     public String getBill() {
         String ans = "";
-        ans = ans + "Base Price Of The Pizza: " + price + "\n";
+        ans = ans + "Base Price Of The Pizza: " + base + "\n";
 
         if (extraCheeseAdded) {
             ans = ans + "Extra Cheese Added: " + extraCheesePrice + "\n";
